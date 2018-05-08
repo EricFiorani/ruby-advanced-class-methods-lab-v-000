@@ -41,11 +41,11 @@ class Song
   end
 
   def self.new_from_filename(filename)
-  artist_song = filename.chomp(".mp3").split(" - ")
-  song = self.new
-  song.artist_name = artist_song.first
-  song.name = artist_song.last
-  song
+    artist_song = filename.chomp(".mp3").split(" - ")
+    song = self.new
+    song.artist_name = artist_song.first
+    song.name = artist_song.last
+    song
   end
 
   def self.create_from_filename(filename)
@@ -53,7 +53,7 @@ class Song
   end
 
   def self.destroy_all
-      self.all.clear
+    self.all.clear
   end
 
 end
