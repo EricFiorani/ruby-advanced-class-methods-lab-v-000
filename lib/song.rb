@@ -46,4 +46,14 @@ class Song
     artist_name = data[0]
     song_name = data[1]
 
+    def self.create_from_filename(name)
+      song = self.new_from_filename(name)
+      song.save
+      song
+    end
+
+    def self.destroy_all
+      self.all.clear
+    end
+
 end
