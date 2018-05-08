@@ -18,6 +18,7 @@ class Song
     song = self.create
     song.name = name
     song
+  end
 
   def self.all
     @@all
