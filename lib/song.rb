@@ -2,8 +2,9 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def self.create
-    @@all << self.new
+  def self.create(song)
+    
+    @@all << song
   end
 
   def self.all
